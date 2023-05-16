@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-   /* max-width: 1200 px*/;
+    scroll-behavior:smooth;
 }
 html{
     background: coral;
@@ -26,6 +26,9 @@ h2,h3,p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
+    
    
     
 }
@@ -85,6 +88,10 @@ img.close.show{
     display: flex;
     
 }
+/*agregado*/
+.nav-link{
+    color: aliceblue;
+}
 .nav-items:hover{
     font-weight: bolder;
     letter-spacing: 1px;
@@ -139,7 +146,7 @@ img.close.show{
     align-items: center;
     
 }
-/*.btn{
+.btn{
     
     background: rgb(201,41,41);
     border-style:none ;
@@ -157,8 +164,7 @@ img.close.show{
     letter-spacing: 2px;
     font-weight: bold;
     
-}*/
-
+}
 /*sobre nostros*/
 
 .img-nosotros{
@@ -204,13 +210,20 @@ img.close.show{
     margin: 10px;
     background-color:rgb(201,41,41);
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.6);
     padding: 10px;
     
     width: 90%;
     max-width:310px;
   }
-  
+  /*agregado*/
+  .card-platos:hover{
+    background:rgb(150, 31, 23);
+    border: aliceblue double;
+    cursor: pointer;
+    
+  }
+
   .card-platos img {
    
     object-fit: cover;
@@ -220,11 +233,14 @@ img.close.show{
   
   .card-info {
     padding: 10px;
+    
   }
-  
+ 
+ 
   .card-info-h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: aliceblue;
   }
   
   .card-info-p {
@@ -260,10 +276,16 @@ img.close.show{
       
       .card {
         background-color: rgb(201,41,41);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
         padding: 20px;
         width: 90%;
         max-width: 310px;
+      }
+      /*agregado*/
+      .card:hover{
+        background: rgb(214, 124, 21);
+          border: aliceblue double;
+          cursor: pointer;
       }
       
       .card-header {
