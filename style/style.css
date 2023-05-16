@@ -1,43 +1,364 @@
-body {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior:smooth;
 }
-header {
-    background-image: url('../Img/Parrilla.jpeg');
-    background-size: cover;
-    background-position: center;
-    color: white;
+html{
+    background: coral;
+}
+h2,h3,p{
+    color: aliceblue;
+}
+
+  .titulo{
+    text-align: center;
+    margin: 10px;
+    font-size: 24px;
+    padding: 16px 0;
+    
+}
+
+.navbar{
+    background: rgb(201,41,41);
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    opacity: 0.8;
+    
+    
+    
+   
+    
 }
-header a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+
+.logo a img{
+    filter: invert(1);
+    width: 50px;
+    height: 50px;
 }
-header a:hover {
-    color: #ddd;
+.toggleBox a img{
+    width: 25px;
+    height: 25px;
 }
-.full-screen {
-    height: 100vh;
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+.navigation.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    left: 0;
+    top:0;
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    height:100%;
+    background: rgb(201,41,41);
+    
+
 }
-#parte1 {
-    background-image: url('../Img/picada.jpg');
+
+.active .nav-link{
+    padding: 20px;
+    
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    
+    
 }
-#parte2 {
-    background-color: lightblue;
+.active .nav-items{
+    padding: 20px;
+    
 }
-#parte3 {
-    background-color: lightgreen;
+
+.toggleBox a img{
+    filter: invert(1);
 }
-#parte4 {
-    background-color: lightpink;
+img.menu.hide{
+    display: none;
+}
+ img.close{
+    display: none;
+}
+img.close.show{
+    display: flex;
+    
+}
+/*agregado*/
+.nav-link{
+    color: aliceblue;
+}
+.nav-items:hover{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    transition: .5s;
+    background: aliceblue;
+    border-radius: 2px;
+    color:rgb(201,41,41);
+}
+.nav-link:hover{
+    color:rgb(201,41,41);
+}
+
+@media screen and (min-width:768px){
+    .navigation {
+        display: flex;  
+    }
+    .nav-ul{
+        display:flex;
+        flex-direction:row ;
+        justify-content: space-between;
+        
+    }
+    .nav-link{
+        padding: 10px;
+        font-size: 16px;
+        color:#fff;
+        font-weight: bold;
+        text-decoration: none;
+
+    }
+    section.toggleBox{
+        display: none;
+    }
+    .navigation.active{
+        width: 100%;
+        height:20px;
+        padding-top: 30px;
+        flex-direction: row;
+        justify-content:flex-end ;
+      
+    }
+}
+/*banner*/
+
+.banner{
+    background-image: url("Img/ ham");
+    background-size:cover;
+    height: 90vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn{
+    
+    background: rgb(201,41,41);
+    border-style:none ;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+.btn:hover{
+    
+    background: cornsilk;
+    border-style:none ;
+    color:rgb(201,41,41) ;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+}
+/*sobre nostros*/
+
+.img-nosotros{
+    width:100%;
+}
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+   
+}
+@media screen and (min-width:768px){
+    .img-nosotros{
+    width:50vw ;
+    height: 50vh;
+   
+    }
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+        background: rgb(201,41,41);
+        justify-content: center;
+        margin: 10px;
+        
+    }
+    .nosotros-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background: rgb(201,41,41);
+    }
+}
+
+
+/*platos*/
+
+ 
+  
+  .card-platos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color:rgb(201,41,41);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    padding: 10px;
+    
+    width: 90%;
+    max-width:310px;
+  }
+  /*agregado*/
+  .card-platos:hover{
+    background:#f73d2f;
+    border: aliceblue double;
+    cursor: pointer;
+    
+  }
+
+  .card-platos img {
+   
+    object-fit: cover;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .card-info {
+    padding: 10px;
+    
+  }
+ 
+ 
+  .card-info-h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: aliceblue;
+  }
+  
+  .card-info-p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+
+    .card-container {
+    
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      
+      
+      
+
+    }
+    
+   
+/*testimonios*/
+
+    .cards {
+      
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 10px;
+      }
+      
+      .card {
+        background-color: rgb(201,41,41);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        width: 90%;
+        max-width: 310px;
+      }
+      /*agregado*/
+      .card:hover{
+        background: #f73d2f;
+          border: aliceblue double;
+          cursor: pointer;
+      }
+      
+      .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      
+      .card-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      
+      
+      
+      .card-text {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      
+       
+   
+      
+      
+/*como llego*/
+.como-llego {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+ 
+  
+  .map-container {
+  
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+  }
+  
+  .map-container iframe {
+   
+    width: 100%;
+    
+  }
+  
+
+/*footer*/
+.rrss{
+    background: rgb(201,41,41);
+}
+.list-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.link-footer{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+.link-footer:hover{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    transition: .5s;
+    background: aliceblue;
+    border-radius: 2px;
+    color:rgb(201,41,41);
 }
