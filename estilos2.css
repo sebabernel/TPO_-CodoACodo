@@ -19,8 +19,6 @@ body{
     background-color: coral;
    
 
-
-
 }
 
 h3{
@@ -78,8 +76,6 @@ h3{
 }
 
 
-
-
 .active .nav-link{
     padding: 20px;
     
@@ -108,34 +104,6 @@ img.close.show{
     
 }
 
-
-
-#parrafo{
-
-    background: coral;
-    
-}
-
-
-
-
-/*------------------------------------------/
-.nav-items:hover{
-    font-weight: bolder;
-    letter-spacing: 1px;
-    transition: .5s;
-    background: aliceblue;
-    border-radius: 2px;
-    color:rgb(201,41,41);
-}
-
-.nav-link:hover{
-    color:rgb(201,41,41);
-}
-
-.nav-link:hover{
-    color:rgb(201,41,41);
-}
 
 /*-------------------------------------------*/
 
@@ -172,34 +140,47 @@ img.close.show{
 }
 
 
-/*banner*/
 
-
-
-/*.banner{
-    background-image: url("assets/hamburger-g90a7161a9_1280.jpg");
-    background-size:cover;
-    height: 90vh;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;}
-
-*/
-
-
-
-
-.img-nosotros2{
-    width:100%;
-}
+/*------------------------Pagina de reserva antes de reservar -------------------------------------------------*/
 .reserva{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
    
 }
+
+
+.reserva-div{
+
+    width: 60%;
+    padding: 20px;
+    text-align: justify;
+    border: solid 2px black;
+
+
+}
+
+.img-nosotros2{
+    width: 40%;
+    border: solid 2px black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.parr {
+
+    color:black;
+    
+    text-align: justify;
+    
+  
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
 @media screen and (min-width:768px){
     .img-nosotros2{
     width:50vw ;
@@ -222,18 +203,11 @@ img.close.show{
     }
 }
 
+/*---------------------------------------------------------------------------------------------------------------*/
 
-.parr {
-
-        color:black;
-        
-        text-align: justify;
-      
-         
+/*--------------------------------------------BOTON RESERVAR--------------------------------------------------*/
 
 
-
-}
 
 .boton{
     display: block;
@@ -253,16 +227,10 @@ img.close.show{
 
 
 
-/*footer
+/*------------------footer-----------------------------------------------*/
 
 
-footer{
-   
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
 
-}*/
 
 .rrss{
     background: rgb(201,41,41);
