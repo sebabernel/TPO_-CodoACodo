@@ -188,6 +188,14 @@ img.close.show{
     }
 }
 
+.nav-items2:hover{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    transition: .5s;
+    background: aliceblue;
+    border-radius: 2px;
+    color:rgb(201,41,41);
+}
 /*--------------------------------  Descripción de la reserva --------------------------------------------------------*/
 
 .img-nosotros2{
