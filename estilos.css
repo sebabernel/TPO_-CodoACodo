@@ -11,6 +11,10 @@ html{
 h2,h3,p{
     color: aliceblue;
 }
+p{
+    font-size: 20px;
+}
+
   .titulo{
     text-align: center;
     margin: 10px;
@@ -26,8 +30,8 @@ h2,h3,p{
 }
 .logo a img{
     filter: invert(1);
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
 }
 .toggleBox a img{
     width: 25px;
@@ -204,7 +208,7 @@ img.close.show{
   }
   
   .card-info-p {
-    font-size: 16px;
+   
     line-height: 1.5;
   }
     .card-container {
@@ -253,7 +257,7 @@ img.close.show{
       
       
       .card-text {
-        font-size: 16px;
+        
         line-height: 1.5;
         margin-bottom: 20px;
       }
