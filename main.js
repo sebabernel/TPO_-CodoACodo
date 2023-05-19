@@ -16,7 +16,7 @@ document.getElementById('reservationForm').addEventListener('submit', function(e
     if (nombre.trim() === '' || apellido.trim() === '' || email.trim() === '' || fecha.trim() === '' || comensales.trim() === '' || isNaN(comensales)) {
       alert('Por favor, complete todos los campos correctamente.');
     } else {
-      // Aquí puedes agregar tu código adicional para el caso de una reserva exitosa
+     
       alert('¡Reserva exitosa!');
     }
   });

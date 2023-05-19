@@ -33,25 +33,25 @@
 <!---------------------------------------------------------------------------------------------------------------------------------->
     <main>
       <div class="container">
-        <h2>Reserva de Mesa</h2>
+        <h2 class="tituloreserva">Reserva de Mesa</h2>
         <form id="reservationForm">
-          <div class="form-group">
+          <div class="form-group col-md-6">
             <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" required>
+            <input type="text" class="form-control col-md-6" id="nombre" required>
           </div>
-          <div class="form-group">
+          <div class="form-group col-md-6" >
             <label for="apellido">Apellido:</label>
             <input type="text" class="form-control" id="apellido" required>
           </div>
-          <div class="form-group">
+          <div class="form-group col-md-6">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" required>
+            <input type="email" class="form-control " id="email" required>
           </div>
-          <div class="form-group">
+          <div class="form-group col-md-6">
             <label for="fecha">Fecha:</label>
-            <input type="date" class="form-control" id="fecha" required>
+            <input type="date" class="form-control " id="fecha" required>
           </div>
-          <div class="form-group">
+          <div class="form-group col-md-6">
             <label for="comensales">Número de Comensales (entre 1 y 10):</label>
             <input type="number" class="form-control" id="comensales" min="1" max="10" required>
           </div>
