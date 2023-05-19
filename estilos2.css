@@ -5,19 +5,24 @@
     list-style: none;
    /* max-width: 1200 px*/;
    
-}
+   font-family: 'Alkatra', cursive;
+   font-family: 'Montez', cursive;
+   font-family: 'Montserrat Alternates', sans-serif; 
+   font-family: 'Noto Serif', serif;
 
+   
+}
 
 
 html{
     background: coral;
+    
 }
 
 body{
 
     margin: 0;
     background-color: coral;
-   
 
 }
 
@@ -25,7 +30,8 @@ h3{
     text-align: center;
     margin: 0%;
     background-color: coral;
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -34,8 +40,10 @@ h3{
     margin: 10px;
     font-size: 24px;
     padding: 16px 0;
-    
+    font-weight: bold;
 }
+
+/* --------------------------- Encabezado -----------------------------------------------------------*/
 
 .navbar{
     background: rgb(201,41,41);
@@ -43,7 +51,7 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    
     
 }
 
@@ -51,6 +59,7 @@ h3{
     filter: invert(1);
     width: 25px;
     height: 25px;
+   
 }
 .toggleBox a img{
     width: 25px;
@@ -76,14 +85,14 @@ h3{
 }
 
 
+
+
 .active .nav-link{
     padding: 20px;
-    
     font-size: 20px;
-    font-weight: bold;
     text-decoration: none;
-    
-    
+    font-weight: bold;
+        
 }
 .active .nav-items{
     padding: 20px;
@@ -104,9 +113,20 @@ img.close.show{
     
 }
 
+/*--------------------------------------------- ----------------------------------------------------------------------*/
 
-/*-------------------------------------------*/
+#parrafo{
 
+    background: coral;
+    
+}
+
+.parr{
+
+    color:white;
+    
+    text-align: justify;
+}
 
 @media screen and (min-width:768px){
     .navigation {
@@ -139,53 +159,23 @@ img.close.show{
     }
 }
 
-
-
-/*------------------------Pagina de reserva antes de reservar -------------------------------------------------*/
-.reserva{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-   
-}
-
-
-.reserva-div{
-
-    width: 60%;
-    padding: 20px;
-    text-align: justify;
-    border: solid 2px black;
-
-
-}
+/*--------------------------------  Descripción de la reserva --------------------------------------------------------*/
 
 .img-nosotros2{
-    width: 40%;
-    border: solid 2px black;
+    width:100%;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-.parr {
-
-    color:black;
-    
-    text-align: justify;
-    
-  
+.reserva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+   
 }
-
-/*---------------------------------------------------------------------------------------------------------------*/
-
 @media screen and (min-width:768px){
     .img-nosotros2{
     width:50vw ;
     height: 50vh;
-   
+  
     }
     .reserva{
         display: flex;
@@ -203,9 +193,6 @@ img {
     }
 }
 
-/*---------------------------------------------------------------------------------------------------------------*/
-
-/*--------------------------------------------BOTON RESERVAR--------------------------------------------------*/
 
 
 
@@ -227,10 +214,16 @@ img {
 
 
 
-/*------------------footer-----------------------------------------------*/
+/*------------------------------------------------------------------------------footer ------------------------------------------------------*/
 
+/*
+footer{
+   
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
 
-
+}*/
 
 .rrss{
     background: rgb(201,41,41);

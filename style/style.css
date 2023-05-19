@@ -4,23 +4,12 @@
     box-sizing: border-box;
     list-style: none;
     scroll-behavior:smooth;
-
-    font-family: 'Alkatra', cursive;
-    font-family: 'Montez', cursive;
-    font-family: 'Montserrat Alternates', sans-serif; 
-    font-family: 'Noto Serif', serif;
-
-
-
 }
 html{
     background: coral;
 }
 h2,h3,p{
     color: aliceblue;
-}
-p{
-    font-size: 20px;
 }
 
   .titulo{
@@ -148,7 +137,7 @@ img.close.show{
 /*banner*/
 
 .banner{
-    background-image: url("assets/hamburger-g90a7161a9_1280.jpg");
+    background-image: url("Img/ ham");
     background-size:cover;
     height: 90vh;
     background-repeat: no-repeat;
@@ -229,7 +218,7 @@ img.close.show{
   }
   /*agregado*/
   .card-platos:hover{
-    background:rgb(150, 31, 23);
+    background:#f73d2f;
     border: aliceblue double;
     cursor: pointer;
     
@@ -255,7 +244,7 @@ img.close.show{
   }
   
   .card-info-p {
-   
+    font-size: 16px;
     line-height: 1.5;
   }
   
@@ -294,7 +283,7 @@ img.close.show{
       }
       /*agregado*/
       .card:hover{
-        background: rgb(214, 124, 21);
+        background: #f73d2f;
           border: aliceblue double;
           cursor: pointer;
       }
@@ -315,7 +304,7 @@ img.close.show{
       
       
       .card-text {
-        
+        font-size: 16px;
         line-height: 1.5;
         margin-bottom: 20px;
       }
