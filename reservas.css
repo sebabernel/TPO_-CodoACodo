@@ -1,0 +1,24 @@
+ .nav-link:hover{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    transition: .5s;
+    background: aliceblue;
+    border-radius: 2px;
+    color:rgb(201,41,41);
+}
+.parr{
+    color: aliceblue;
+    padding: 10px;
+   
+}
+.titulo-h3{
+    color: aliceblue;
+    padding-top: 10px;
+}
+
+.rrss{
+    position: relative;
+    bottom: -15px;
+    padding: 0;
+}
+

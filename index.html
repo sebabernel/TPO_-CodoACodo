@@ -7,23 +7,24 @@
     <title>Document</title>
      <title>La Mange</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="estilos.css">
     <script src="https://kit.fontawesome.com/78930829a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--nav-->
     <header class="navbar">
         <section class="logo">
-            <a href="#"><img  src="Img/logo-sin-fondo.png" alt=""></a>
+            <a href="#"><img  src="assets/logo-sin-fondo.png" alt=""></a>
         </section>
         <nav class="navigation">
             <ul class="nav-ul">
                 <li class="nav-items"><a class="nav-link" href="index.html">Home</a></li>
-                <li  class="nav-items"><a class="nav-link" href="#">Nosotros</a></li>
-                <li  class="nav-items"><a class="nav-link" href="#nosotros">Sobre nosotros</a></li>
+                
+                <li  class="nav-items"><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>
                 <li  class="nav-items"><a class="nav-link" href="platos.html">Menú</a></li>
-                <li  class="nav-items"><a class="nav-link" href="#testimonios">Testimonios</a></li>
-                <li  class="nav-items"><a class="nav-link" href="#testimonios">Testimonios</a></li>
-                <li  class="nav-items"><a class="nav-link" href="#">Como llego</a></li>
+                <li  class="nav-items"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+                
+                <li  class="nav-items"><a class="nav-link" href=#comoLlego>Como llego</a></li>
                 <li  class="nav-items"><a class="nav-link" href="./Reservas.html">Reservas</a></li>
             </ul>
         </nav>
@@ -34,7 +35,7 @@
     <!--banner-->
     <section class="banner">
         
-       <button class="btn btn-section">Reservas</button>
+       <button href="./Reservas.html" class="btn btn-section">Reservas</button>
     </section>
     
      <!--sección 1-->
@@ -61,7 +62,7 @@
        <section class="card-container">
            
            <article class="card-platos">
-             <img src="Img/asado.jpeg" alt="asado">
+             <img src="assets/asado.jpeg" alt="asado">
              <section class="card-info">
                <h3 class="card-info-h3">Asado</h3>
                <p class="card-info-p">Asado para 4 personas, el mas completo y abundante</p>
@@ -69,7 +70,7 @@
            </article>
            
            <article class="card-platos">
-             <img src="Img/Bife de chorizo.jpeg" alt="bife de chorizo">
+             <img src="assets/Bife de chorizo.jpeg" alt="bife de chorizo">
              <section class="card-info">
                <h3 class="card-info-h3">Bife de chorizo</h3>
                <p class="card-info-p">Unos de los platos mas ricos y simple de la gastronomía argentina con la mejor materia prima .</p>
@@ -77,7 +78,7 @@
            </article>
            
            <article class="card-platos">
-             <img src="Img/locro.jpeg" alt="locro">
+             <img src="assets/locro.jpeg" alt="locro">
              <section class="card-info">
                <h3 class="card-info-h3">Locro</h3>
                <p class="card-info-p">Clásico argentina,ideal para 4 cuatro personas.</p>
@@ -93,7 +94,7 @@
              <section class="cards">
             <article class="card">
               <section class="card-header">
-                <img src="Img/valeria.jpg" alt="Card Image" class="card-image">
+                <img src="assets/valeria.jpg" alt="Card Image" class="card-image">
                 <h3>Valeria</h3>
               </section>
               <p class="card-text">"Un ambiente relajado y un trato familiar.La comida es excelente,se nota la caidad de sus pruductos."</p>
@@ -102,7 +103,7 @@
             
             <article class="card">
               <section class="card-header">
-                <img src="Img/matt.jpg" alt="Card Image" class="card-image">
+                <img src="assets/matt.jpg" alt="Card Image" class="card-image">
                 <h3>Matt</h3>
               </section>
               <p class="card-text">"Patosn deliciosos, un precio muy acorde a la calidad y un clima muy amigable ."</p>
@@ -111,7 +112,7 @@
             
             <article class="card">
               <section class="card-header">
-                <img src="Img/natalia.jpg" alt="Card Image" class="card-image">
+                <img src="assets/natalia.jpg" alt="Card Image" class="card-image">
                 <h3>Natalia</h3>
               </section>
               <p class="card-text">"Gran ambiente de amistad y alegría.La comida es sencillamente deliciosa."</p>
@@ -122,7 +123,7 @@
           <!--iframe-->
           <section class="como-llego">
             <h2 class="titulo">Cómo llegar</h2>
-            <div class="map-container">
+            <div id="comoLlego" class="map-container">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.774554535942!2d-122.42339178501628!3d37.77756177486502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807e699d4fd9%3A0xe4c2fdd7ccfd72b4!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1618228121446!5m2!1sen!2sus"
                 frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
