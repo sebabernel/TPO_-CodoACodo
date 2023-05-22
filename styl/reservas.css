@@ -6,16 +6,23 @@
     border-radius: 2px;
     color:rgb(201,41,41);
 }
-.parr{
+.parr {
+    white-space: pre-line;
+    line-height: 1.5;
     color: aliceblue;
-    padding: 10px;
-   
-}
+  }
 .titulo-h3{
     color: aliceblue;
     padding-top: 10px;
+    
 }
-
+.titulo-h3b{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    padding-top: 10px;
+}
 .rrss{
     position: relative;
     bottom: -15px;

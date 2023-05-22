@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+   /* max-width: 1200 px*/;
+  
+   font-family: 'Alkatra', cursive;
+   font-family: 'Montez', cursive;
+   font-family: 'Montserrat Alternates', sans-serif;
+   font-family: 'Noto Serif', serif;
+  
+ }
+ 
+ 
+ 
+ 
+ html{
+    background: coral;
+   
+ }
+ 
+ 
+ body{
+ 
+ 
+    margin: 0;
+    background-color: coral;
+ 
+ 
+ }
+ 
+ 
+ h2{
+    text-align: left;
+    margin: 0%;
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+ }
+ 
+ 
+ 
+ 
+ .titulo {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    padding: 5px;
+    font-weight: bold;
+ }
+ 
+ 
+ .tituloreserva{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    padding: 5px;
+    font-weight: bold;
+ 
+ 
+ }
+ 
+ 
+ .titulosuscripcion{
+ 
+ 
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    padding: 5px;
+    font-weight: bold;
+ 
+ 
+ 
+ 
+ }
+ 
+ 
+ .container{
+ 
+ 
+    margin-top: 20px;
+ }
+ 
+ 
+ /* --------------------------- Encabezado -----------------------------------------------------------*/
+ 
+ 
+ .navbar{
+    background: rgb(201,41,41);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+ }
+ 
+ 
+ .logo a img{
+    filter: invert(1);
+    width: 50px;
+    height: 50px;
+  
+ }
+ .toggleBox a img{
+    width: 25px;
+    height: 25px;
+ }
+ .navigation {
+    display: none;
+    flex-direction: column;
+ }
+ .navigation.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background: rgb(201,41,41);
+ 
+ }
+ 
+ .active .nav-link{
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+       
+ }
+ .active .nav-items{
+    padding: 20px;
+   
+ }
+ 
+ 
+ .toggleBox a img{
+    filter: invert(1);
+ }
+ img.menu.hide{
+    display: none;
+ }
+ img.close{
+    display: none;
+ }
+ img.close.show{
+    display: flex;
+   
+ }
+ 
+ 
+ /*--------------------------------------------- ----------------------------------------------------------------------*/
+ 
+ #parrafo{
+    background: coral;
+ }
+ 
+ .parr{
+   
+    color:white;
+    text-align: justify;
+    margin: 20px;
+    padding: 5px;
+ }
+ @media (min-width: 301px) {
+   .nav-link {
+      padding: 3px;
+      font-size: 5px;
+      color: #fff;
+   }
+     
+ }
+ 
+ @media screen and (min-width:768px){
+    .navigation {
+        display: flex; 
+    }
+    .nav-ul{
+        display:flex;
+        flex-direction:row ;
+        justify-content: space-between;
+       
+    }
+    .nav-link{
+        padding: 10px;
+        font-size: 16px;
+        color:#fff;
+        font-weight: bold;
+        text-decoration: none;
+ 
+ 
+    }
+    section.toggleBox{
+        display: none;
+    }
+    .navigation.active{
+        width: 100%;
+        height:20px;
+        padding-top: 30px;
+        flex-direction: row;
+        justify-content:flex-end ;
+     
+    }
+ }
+ 
+ 
+ .nav-items2:hover{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    transition: .5s;
+    background: aliceblue;
+    border-radius: 2px;
+    color:rgb(201,41,41);
+ }
+ /*--------------------------------  Descripción de la reserva --------------------------------------------------------*/
+ 
+ 
+ .img-nosotros2{
+    width:100%;
+ }
+ .reserva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  
+ }
+ @media screen and (min-width:768px){
+    .img-nosotros2{
+    width:50vw ;
+    height: 50vh;
+     }
+    .reserva{
+        display: flex;
+        flex-direction: row;
+        background: rgb(201,41,41);
+        justify-content: center;
+        margin: 10px;
+       
+    }
+    .reserva-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background: rgb(201,41,41);
+    }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .boton{
+    display: block;
+    padding: 0.5rem 1rem;
+    width: 200px;
+    margin: 0 auto;
+ }
+ 
+ 
+ .formu{
+ 
+ 
+    background-color: coral;
+ }
+
+ .rrss{
+     background: rgb(201,41,41);
+     position: absolute;
+     bottom: 0%;
+    width: 100%;
+   
+ }
+ .list-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+ }
+ .link-footer{
+    text-decoration: none;
+    color: aliceblue;
+ 
+ 
+   
+ }
+ .link-footer:hover{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    transition: .5s;
+    background: aliceblue;
+    border-radius: 2px;
+    color:rgb(201,41,41);
+ }
+ 

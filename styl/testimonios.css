@@ -27,22 +27,22 @@
 .banner-item:nth-child(1){
 
 background: #2ff793;
-background-image: url(assets/testimoni-4.jpg);
+background-image: url(../assets/testimoni-4.jpg);
 background-position:center ;
 }
 .banner-item:nth-child(2){
     background: #2f3cf7;
-    background-image: url(assets/mujer-testimonio-1.jpg);
+    background-image: url(../assets/mujer-testimonio-1.jpg);
     background-position:center ;
 }
 .banner-item:nth-child(3){
     background: #aaf72f;
-    background-image: url(assets/testimonio-2.jpg);
+    background-image: url(../assets/testimonio-2.jpg);
     background-position:center ;
 }
 .banner-item:nth-child(4){
     background: #f72fcc;
-    background-image: url(assets/testimonio-3.jpg);
+    background-image: url(../assets/testimonio-3.jpg);
     background-position:center ;
 }
 .banner-title{
@@ -50,7 +50,7 @@ background-position:center ;
     transform:rotate(-90deg) ;
     transition: transform 0.2s;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 20px;
     text-shadow: #000 1px 0 10px;
 }
 .image-item{
