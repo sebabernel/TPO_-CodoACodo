@@ -1,145 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <title>La Mange</title>
-   <!--<link rel="stylesheet" href="./styl/style.css">-->
-    <link rel="stylesheet" href="./styl/estilos.css">
-    <script src="https://kit.fontawesome.com/78930829a8.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <title>La Mange</title>
+  <!--<link rel="stylesheet" href="./styl/style.css">-->
+  <link rel="stylesheet" href="./styl/estilos.css">
+  <script src="https://kit.fontawesome.com/78930829a8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <!--nav-->
-    <header class="navbar">
-        <section class="logo">
-            <a href="#"><img  src="./assets/logo-sin-fondo.png" alt=""></a>
-        </section>
-        <nav class="navigation">
-            <ul class="nav-ul">
-                <li class="nav-items"><a class="nav-link" href="index.html">Home</a></li>
-                
-                <li  class="nav-items"><a class="nav-link" href="./formularios/nosotros.html">Nosotros</a></li>
-                <li  class="nav-items"><a class="nav-link" href="./formularios/platos.html">Menú</a></li>
-                <li  class="nav-items"><a class="nav-link" href="./formularios/testimonios.html">Testimonios</a></li>
-                <li  class="nav-items"><a class="nav-link" href="#comoLlego">Como llego</a></li>
-                <li  class="nav-items"><a class="nav-link" href="./formularios/Reservas.html">Reservas</a></li>
-            </ul>
-        </nav>
-        <section class="toggleBox"><a onclick="showMenu()" href="#"><img   class="menu" src="./assets/3844438-hamburger-menu-more-navigation_110319.png" alt=""><img class="close" src="./assets/close_111152.png" alt=""></a>
-        </section>
-    </header>
-
-    <!--banner-->
-    <section class="banner">
-      <img class="banner-img" src="./assets/salmon.jpg" alt="imagen de fondo de pantalla">
+  <!--nav-->
+  <header class="navbar">
+    <section class="logo">
+      <a href="#"><img src="./assets/logo-sin-fondo.png" alt=""></a>
     </section>
-    
-     <!--sección 1-->
-     
-     
-     <section class="nosotros">
-         <article class="nosotros-div">
-        <h2 class="titulo">Nosotros</h2>
-         <p class=" titulo-nosotros">Nuestro proyecto comenzó con la idea de crear un lugar en el que la gente pudiera disfrutar de sabores auténticos de toda la Argentina, en un ambiente acogedor y amigable.
+    <nav class="navigation">
+      <ul class="nav-ul">
+        <li class="nav-items"><a class="nav-link" href="index.html">Home</a></li>
 
-          Nuestro menú ofrece una amplia variedad de platos, desde especialidades de la cocina del Norte Argentino hasta sabores de la comida del sur.  Cada uno de nuestros empleados tiene un papel importante en nuestro equipo y todos trabajamos juntos para ofrecer una experiencia culinaria única a nuestros clientes.
-          ¡Esperamos que disfruten de su experiencia en nuestro restaurante y esperamos darles la bienvenida pronto!</p>
-        
-        </article>
-        <img class="img-nosotros" src="./assets/hamburger-g90a7161a9_1280.jpg" alt="">
-     </section>
+        <li class="nav-items"><a class="nav-link" href="./formularios/nosotros.html">Nosotros</a></li>
+        <li class="nav-items"><a class="nav-link" href="./formularios/platos.html">Menú</a></li>
+        <li class="nav-items"><a class="nav-link" href="./formularios/testimonios.html">Testimonios</a></li>
+        <li class="nav-items"><a class="nav-link" href="#comoLlego">Como llego</a></li>
+        <li class="nav-items"><a class="nav-link" href="./formularios/Reservas.html">Reservas</a></li>
+      </ul>
+    </nav>
+    <section class="toggleBox"><a onclick="showMenu()" href="#"><img class="menu"
+          src="./assets/3844438-hamburger-menu-more-navigation_110319.png" alt=""><img class="close"
+          src="./assets/close_111152.png" alt=""></a>
+    </section>
+  </header>
 
+  <!--API -->
+  <div class="weather-widget-container">
+    <div id="ww_10e52428a4741" v='1.3' loc='id' a='{"t":"ticker","lang":"es","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","el_nme":3}'>Weather Data Source: <a href="https://oneweather.org/it/milan/10_days/" id="ww_10e52428a4741_u" target="_blank">10 giorni meteo Milano</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_10e52428a4741"></script>
+  </div>
 
-     <!--sección 2-->
-     <section>   
-        <h2 class="titulo">Menú</h2>
-       <section class="card-container">
-           
-           <article class="card-platos">
-             <img src="./assets/asado.jpeg" alt="asado">
-             <section class="card-info">
-               <h3 class="card-info-h3">Asado</h3>
-               <p class="card-info-p">Asado para 4 personas, el mas completo y abundante</p>
-             </section>
-           </article>
-           
-           <article class="card-platos">
-             <img src="./assets/Bife de chorizo.jpeg" alt="bife de chorizo">
-             <section class="card-info">
-               <h3 class="card-info-h3">Bife de chorizo</h3>
-               <p class="card-info-p">Unos de los platos mas ricos y simple de la gastronomía argentina con la mejor materia prima.</p>
-             </section>
-           </article>
-           
-           <article class="card-platos">
-             <img src="./assets/locro.jpeg" alt="locro">
-             <section class="card-info">
-               <h3 class="card-info-h3">Locro</h3>
-               <p class="card-info-p">Clásico argentina, ideal para 4 cuatro personas.</p>
-             </section>
-           </article>
-          </section>
-           </section>
+  <!--banner-->
+  <section class="banner">
+    <img class="banner-img" src="./assets/salmon.jpg" alt="imagen de fondo de pantalla">
+  </section>
+
+  <!--sección 1-->
 
 
-           <!--sección 3-->
-           <section class="testimonios">
-             <h2 class="titulo">Testimonios</h2>
-             <section class="cards">
-            <article class="card">
-              <section class="card-header">
-                <img src="./assets/vale.jpg" alt="Card Image" class="card-image">
-                <h3>Valeria</h3>
-              </section>
-              <p class="card-text">"Un ambiente relajado y un trato familiar. La comida es excelente, se nota la caidad de sus pruductos."</p>
-              
-            </article>
-            
-            <article class="card">
-              <section class="card-header">
-                <img src="./assets/matt.jpg" alt="Card Image" class="card-image">
-                <h3>Matt</h3>
-              </section>
-              <p class="card-text">"Patosn deliciosos, un precio muy acorde a la calidad y un clima muy amigable."</p>
-             
-            </article>
-            
-            <article class="card">
-              <section class="card-header">
-                <img src="./assets/natalia.jpg" alt="Card Image" class="card-image">
-                <h3>Natalia</h3>
-              </section>
-              <p class="card-text">"Gran ambiente de amistad y alegría. La comida es sencillamente deliciosa."</p>
-              
-            </article>
-          </section>
-          </section>
-          <!--iframe-->
-          <section class="como-llego">
-            <h2 class="titulo">Cómo llegar</h2>
-            <div id="comoLlego" class="map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.774554535942!2d-122.42339178501628!3d37.77756177486502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807e699d4fd9%3A0xe4c2fdd7ccfd72b4!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1618228121446!5m2!1sen!2sus"
-                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-          </section>
-          <!--footer-->
-          <footer>
+  <section class="nosotros">
+    <article class="nosotros-div">
+      <h2 class="titulo">Nosotros</h2>
+      <p class=" titulo-nosotros">Nuestro proyecto comenzó con la idea de crear un lugar en el que la gente pudiera
+        disfrutar de sabores auténticos de toda la Argentina, en un ambiente acogedor y amigable.
+        Nuestro menú ofrece una amplia variedad de platos, desde especialidades de la cocina del Norte Argentino hasta sabores de la comida del sur. Cada uno de nuestros empleados tiene un papel importante en nuestro equipo y todos trabajamos juntos para ofrecer una experiencia culinaria única a nuestros clientes.
+        ¡Esperamos que disfruten de su experiencia en nuestro restaurante y esperamos darles la bienvenida pronto!</p>
 
-            <section class="rrss">
-              <nav class="nav-footer">
-                <ul class="list-footer">
-                  <li class="item-footer"><a href="" class="link-footer"><i class="fa-brands fa-facebook-f"></i></i></a></li>
-                  <li class="item-footer"><a href="" class="link-footer"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li class="item-footer"><a href="" class="link-footer"><i class="fa-brands fa-whatsapp"></i></a></li>
-                  <li class="item-footer"><a href="" class="link-footer"><i class="fa-regular fa-envelope"></i></i></a></li>
-                </ul>
-              </nav>
-            </section>
-          </footer>
-          
-      <script src="./js/main.js"></script>
+    </article>
+    <img class="img-nosotros" src="./assets/hamburger-g90a7161a9_1280.jpg" alt="">
+  </section>
+
+
+  <!--sección 2-->
+  <section>
+    <h2 class="titulo">Menú</h2>
+    <section class="card-container">
+
+      <article class="card-platos">
+        <img src="./assets/asado.jpeg" alt="asado">
+        <section class="card-info">
+          <h3 class="card-info-h3">Asado</h3>
+          <p class="card-info-p">Asado para 4 personas, el mas completo y abundante</p>
+        </section>
+      </article>
+
+      <article class="card-platos">
+        <img src="./assets/Bife de chorizo.jpeg" alt="bife de chorizo">
+        <section class="card-info">
+          <h3 class="card-info-h3">Bife de chorizo</h3>
+          <p class="card-info-p">Unos de los platos mas ricos y simple de la gastronomía argentina con la mejor materia
+            prima.</p>
+        </section>
+      </article>
+
+      <article class="card-platos">
+        <img src="./assets/locro.jpeg" alt="locro">
+        <section class="card-info">
+          <h3 class="card-info-h3">Locro</h3>
+          <p class="card-info-p">Clásico argentina, ideal para 4 cuatro personas.</p>
+        </section>
+      </article>
+    </section>
+  </section>
+
+
+  <!--sección 3-->
+  <section class="testimonios">
+    <h2 class="titulo">Testimonios</h2>
+    <section class="cards">
+      <article class="card">
+        <section class="card-header">
+          <img src="./assets/vale.jpg" alt="Card Image" class="card-image">
+          <h3>Valeria</h3>
+        </section>
+        <p class="card-text">"Un ambiente relajado y un trato familiar. La comida es excelente, se nota la caidad de sus
+          pruductos."</p>
+
+      </article>
+
+      <article class="card">
+        <section class="card-header">
+          <img src="./assets/matt.jpg" alt="Card Image" class="card-image">
+          <h3>Matt</h3>
+        </section>
+        <p class="card-text">"Patosn deliciosos, un precio muy acorde a la calidad y un clima muy amigable."</p>
+
+      </article>
+
+      <article class="card">
+        <section class="card-header">
+          <img src="./assets/natalia.jpg" alt="Card Image" class="card-image">
+          <h3>Natalia</h3>
+        </section>
+        <p class="card-text">"Gran ambiente de amistad y alegría. La comida es sencillamente deliciosa."</p>
+
+      </article>
+    </section>
+  </section>
+  <!--iframe-->
+  <section class="como-llego">
+    <h2 class="titulo">Cómo llegar</h2>
+    <div id="comoLlego" class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.774554535942!2d-122.42339178501628!3d37.77756177486502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807e699d4fd9%3A0xe4c2fdd7ccfd72b4!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1618228121446!5m2!1sen!2sus"
+        frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </section>
+  <!--footer-->
+  <footer>
+
+    <section class="rrss">
+      <nav class="nav-footer">
+        <ul class="list-footer">
+          <li class="item-footer"><a href="" class="link-footer"><i class="fa-brands fa-facebook-f"></i></i></a></li>
+          <li class="item-footer"><a href="" class="link-footer"><i class="fa-brands fa-instagram"></i></a></li>
+          <li class="item-footer"><a href="" class="link-footer"><i class="fa-brands fa-whatsapp"></i></a></li>
+          <li class="item-footer"><a href="" class="link-footer"><i class="fa-regular fa-envelope"></i></i></a></li>
+        </ul>
+      </nav>
+    </section>
+  </footer>
+
+  <script src="./js/main.js"></script>
 </body>
-  
+
 </html>
